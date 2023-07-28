@@ -1,0 +1,32 @@
+n=int(input("number:"))
+
+for i  in range(1,11):
+
+    print(n,"*",i,"=",n*i)
+ 
+
+
+
+
+-------------------------------   
+
+
+n=int(input("number:"))
+
+for i  in range(10,0,-1):
+
+    print(n,"*",i,"=",n*i)
+
+
+
+
+--------------------------------
+
+
+s="python"
+
+print(s[:2])
+
+s="svrec"
+
+print(s[3:])

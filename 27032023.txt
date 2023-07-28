@@ -1,0 +1,15 @@
+n=[1,82,531,4,5]
+
+s=""
+
+for i in n:
+
+    s+=str(i)
+
+res=[]
+
+for i in s:
+
+    res.append(int(i))
+
+print(res)

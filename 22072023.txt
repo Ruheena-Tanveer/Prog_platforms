@@ -1,0 +1,9 @@
+v=200
+
+w=540
+
+tw=((4*v)-w)//2
+
+fw=v-tw
+
+print(tw,fw)
