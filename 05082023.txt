@@ -1,0 +1,18 @@
+n=int(input())
+
+for i in range(n+1):
+
+    print(i**2)
+
+
+
+------------------------------------
+s="welcome to indian railway"
+
+n=""
+
+for i in s.split():
+
+    n+=i+" "
+
+print(n[:-1])
