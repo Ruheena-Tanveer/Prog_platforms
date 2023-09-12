@@ -1,0 +1,47 @@
+class Solution:
+
+    def isValid(self, s: str) -> bool:
+
+        a1='{(['
+
+        a2='})]'
+
+        define=[]
+
+        dictionary={')':'(','}':'{',']':'['}
+ 
+        for i in s:
+ 
+           if i in a1:
+  
+              define.append(i)
+
+           elif i in a2:
+   
+             if not define  or define.pop()!=dictionary[i]:
+   
+                 return False
+  
+      return len(define)==0
+
+a=Solution()
+
+print(a.isValid('{}[()]['))
+
+
+
+
+
+----------------------------------------------------\
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        match = {'(':')', '{':'}', '[':']'}
+        for char in s:
+            if char in match:
+                stack.append(char)
+            elif len(stack) == 0 or match[stack[-1]] != char:
+                return False
+            else:
+                stack.pop()
+        return len(stack) == 0

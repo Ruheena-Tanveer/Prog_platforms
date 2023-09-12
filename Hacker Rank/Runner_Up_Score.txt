@@ -1,0 +1,26 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    scores = list(set(arr))
+    scores.sort(reverse=True)
+    print(scores[1])
+
+
+
+-----------------------------------------
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    runner=list(set(arr))
+    runner.sort()
+    print(runner[-2])
+
+
+--------------------------------------------
+if __name__ == '__main__':
+    i = int(input())
+    lis = list(map(int,input().strip().split()))
+    z = max(lis)
+    while max(lis) == z:
+        lis.remove(max(lis))
+    print(max(lis))
